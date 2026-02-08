@@ -29,9 +29,7 @@ const AuthModal = ({ isOpen, onClose, initialMode = 'signin' }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  if (loading) {
-    return <JeansLoader message={mode === 'signin' ? 'Signing you in...' : 'Creating your account...'} />;
-  }
+  if (loading) return <JeansLoader message={mode === 'signin' ? 'Signing you in...' : 'Creating your account...'} />;
 
   return (
     <AnimatePresence>
@@ -66,11 +64,11 @@ const AuthModal = ({ isOpen, onClose, initialMode = 'signin' }) => {
               <div className="relative z-10">
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="w-12 h-12 bg-monegza-gold rounded-xl flex items-center justify-center">
-                    <span className="text-white font-bold text-xl">M</span>
+                    <span className="text-white font-bold text-xl">O</span>
                   </div>
                   <div>
                     <h2 className="text-2xl font-display font-bold">
-                      {mode === 'signin' ? 'Welcome Back' : 'Join MONEGZA'}
+                      {mode === 'signin' ? 'Welcome Back' : 'Join OZZO'}
                     </h2>
                     <p className="text-white/80 text-sm">
                       {mode === 'signin' ? 'Sign in to your account' : 'Create your premium account'}

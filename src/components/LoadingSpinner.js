@@ -14,7 +14,7 @@ const LoadingSpinner = () => (
         transition={{ duration: 1.5, repeat: Infinity }}
         className="text-monegza-primary font-semibold"
       >
-        Loading MONEGZA...
+        Loading OZZO...
       </motion.div>
     </div>
   </div>

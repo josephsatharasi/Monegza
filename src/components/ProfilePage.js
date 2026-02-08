@@ -14,14 +14,14 @@ const ProfilePage = ({ user, onClose }) => {
   ];
 
   const orders = [
-    { id: '#MZ001', date: '2024-01-15', status: 'Delivered', total: '$129', items: 2 },
-    { id: '#MZ002', date: '2024-01-10', status: 'Shipped', total: '$249', items: 1 },
-    { id: '#MZ003', date: '2024-01-05', status: 'Processing', total: '$189', items: 3 }
+    { id: '#MZ001', date: '2024-01-15', status: 'Delivered', total: '₹3500', items: 2 },
+    { id: '#MZ002', date: '2024-01-10', status: 'Shipped', total: '₹7200', items: 1 },
+    { id: '#MZ003', date: '2024-01-05', status: 'Processing', total: '₹4800', items: 3 }
   ];
 
   const wishlistItems = [
-    { id: 1, name: 'Classic Slim Fit', price: '$129', image: 'https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' },
-    { id: 2, name: 'High-Waist Skinny', price: '$119', image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' }
+    { id: 1, name: 'Classic Slim Fit', price: 3500, image: 'https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' },
+    { id: 2, name: 'High-Waist Skinny', price: 4800, image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' }
   ];
 
   return (
@@ -227,7 +227,7 @@ const ProfilePage = ({ user, onClose }) => {
                         <div className="p-4">
                           <h3 className="font-semibold text-monegza-primary mb-2">{item.name}</h3>
                           <div className="flex items-center justify-between">
-                            <span className="text-lg font-bold text-monegza-primary">{item.price}</span>
+                            <span className="text-lg font-bold text-monegza-primary">₹{item.price}</span>
                             <button className="bg-monegza-primary text-white px-4 py-2 rounded-lg hover:shadow-lg transition-shadow">
                               Add to Cart
                             </button>

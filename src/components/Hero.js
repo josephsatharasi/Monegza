@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Play, Star } from 'lucide-react';
+import { ArrowRight, Play, Star, TrendingUp, Award } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-monegza-light via-white to-monegza-light">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-monegza-light via-white to-monegza-light pt-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-hero-pattern opacity-30"></div>
       
@@ -30,7 +30,7 @@ const Hero = () => {
               className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-monegza-gold/20"
             >
               <Star className="w-4 h-4 text-monegza-gold fill-current" />
-              <span className="text-sm font-medium text-monegza-primary">Premium Denim Collection</span>
+              <span className="text-sm font-medium text-monegza-primary">Free Shipping Over ₹5000</span>
             </motion.div>
 
             {/* Main Heading */}
@@ -40,9 +40,9 @@ const Hero = () => {
               transition={{ delay: 0.3 }}
               className="text-5xl lg:text-7xl font-display font-bold text-monegza-primary leading-tight"
             >
-              Redefine Your
+              Discover Premium
               <span className="block bg-gradient-to-r from-monegza-gradient-start to-monegza-gradient-end bg-clip-text text-transparent">
-                Denim Style
+                Fabrics & Fashion
               </span>
             </motion.h1>
 
@@ -53,7 +53,7 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-xl text-gray-600 leading-relaxed max-w-lg"
             >
-              Experience the perfect blend of comfort, sustainability, and cutting-edge fashion with MONEGZA's premium denim collection.
+              Experience the finest collection of formal wear fabrics, traditional sarees, and ready-made garments for every occasion.
             </motion.p>
 
             {/* Stats */}
@@ -64,15 +64,24 @@ const Hero = () => {
               className="flex items-center space-x-8"
             >
               <div className="text-center">
+                <div className="flex items-center justify-center mb-2">
+                  <TrendingUp className="w-6 h-6 text-monegza-primary" />
+                </div>
                 <div className="text-3xl font-bold text-monegza-primary">50K+</div>
                 <div className="text-sm text-gray-500">Happy Customers</div>
               </div>
               <div className="text-center">
+                <div className="flex items-center justify-center mb-2">
+                  <Award className="w-6 h-6 text-monegza-primary" />
+                </div>
                 <div className="text-3xl font-bold text-monegza-primary">100%</div>
-                <div className="text-sm text-gray-500">Sustainable</div>
+                <div className="text-sm text-gray-500">Quality</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-monegza-primary">4.9★</div>
+                <div className="flex items-center justify-center mb-2">
+                  <Star className="w-5 h-5 text-yellow-400 fill-current" />
+                </div>
+                <div className="text-3xl font-bold text-monegza-primary">4.9</div>
                 <div className="text-sm text-gray-500">Rating</div>
               </div>
             </motion.div>
@@ -133,15 +142,17 @@ const Hero = () => {
                 <div className="w-full h-[600px] bg-gradient-to-br from-monegza-secondary to-monegza-accent rounded-3xl shadow-2xl overflow-hidden relative">
                   {/* Hero Image */}
                   <img 
-                    src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                    alt="MONEGZA Premium Jeans Model" 
+                    src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                    alt="OZZO Premium Fabrics" 
                     className="w-full h-full object-cover"
+                    onError={(e) => { e.target.src = 'https://via.placeholder.com/1000x600/1a1a2e/ffffff?text=OZZO'; }}
                   />
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-monegza-primary/60 via-transparent to-transparent"></div>
                   {/* Brand Badge */}
-                  <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full">
-                    <span className="text-monegza-primary font-semibold">MONEGZA Premium</span>
+                  <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center space-x-2">
+                    <Award className="w-4 h-4 text-monegza-primary" />
+                    <span className="text-monegza-primary font-semibold">OZZO Premium</span>
                   </div>
                 </div>
               </motion.div>
@@ -180,25 +191,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-monegza-primary rounded-full flex justify-center"
-        >
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-1 h-3 bg-monegza-primary rounded-full mt-2"
-          ></motion.div>
-        </motion.div>
-      </motion.div>
+
     </section>
   );
 };

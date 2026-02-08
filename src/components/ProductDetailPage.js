@@ -18,10 +18,10 @@ const ProductDetailPage = ({ product, onClose }) => {
   ];
 
   const features = [
-    { icon: Truck, text: 'Free shipping on orders over $100' },
+    { icon: Truck, text: 'Free shipping on orders over ₹5000' },
     { icon: Shield, text: '2-year quality guarantee' },
     { icon: Package, text: 'Easy returns within 30 days' },
-    { icon: Ruler, text: 'Virtual try-on available' }
+    { icon: Ruler, text: 'Size guide available' }
   ];
 
   const sizeGuide = [
@@ -137,8 +137,8 @@ const ProductDetailPage = ({ product, onClose }) => {
               
               {/* Price */}
               <div className="flex items-center space-x-4">
-                <span className="text-4xl font-bold text-monegza-primary">${product.price}</span>
-                <span className="text-2xl text-gray-400 line-through">${product.originalPrice}</span>
+                <span className="text-4xl font-bold text-monegza-primary">₹{product.price}</span>
+                <span className="text-2xl text-gray-400 line-through">₹{product.originalPrice}</span>
                 <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
                   Save {Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)}%
                 </span>
@@ -235,7 +235,7 @@ const ProductDetailPage = ({ product, onClose }) => {
                 disabled={!selectedSize}
                 className="w-full bg-gradient-to-r from-monegza-gradient-start to-monegza-gradient-end text-white py-4 rounded-xl font-semibold text-lg hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Add to Cart - ${product.price * quantity}
+                Add to Cart - ₹{product.price * quantity}
               </motion.button>
               
               <motion.button

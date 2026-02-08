@@ -11,8 +11,8 @@ const CustomerReviews = () => {
       name: 'Sarah Johnson',
       location: 'New York, USA',
       rating: 5,
-      review: 'Absolutely love my MONEGZA jeans! The fit is perfect and the quality is outstanding. The virtual try-on feature made shopping so easy.',
-      product: 'High-Waist Skinny',
+      review: 'Absolutely love my OZZO saree! The fabric quality is outstanding and the colors are vibrant. Perfect for my wedding.',
+      product: 'Pattu Saree',
       image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
       social: 'instagram',
       verified: true
@@ -22,8 +22,8 @@ const CustomerReviews = () => {
       name: 'Michael Chen',
       location: 'Los Angeles, USA',
       rating: 5,
-      review: 'Best jeans I\'ve ever owned. The sustainable approach and premium quality make it worth every penny. Highly recommend!',
-      product: 'Classic Slim Fit',
+      review: 'Best formal shirt fabric I\'ve ever purchased. The quality and finish are premium. Highly recommend for tailoring!',
+      product: 'Formal Shirt Fabric',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
       social: 'twitter',
       verified: true
@@ -33,8 +33,8 @@ const CustomerReviews = () => {
       name: 'Emma Rodriguez',
       location: 'Miami, USA',
       rating: 5,
-      review: 'The comfort and style are unmatched. I love that they\'re eco-friendly too. MONEGZA has become my go-to denim brand.',
-      product: 'Eco-Friendly Bootcut',
+      review: 'The ready-made blouse fits perfectly! Beautiful design and excellent stitching. OZZO has become my go-to store.',
+      product: 'Ready-Made Blouse',
       image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
       social: 'facebook',
       verified: true
@@ -44,8 +44,8 @@ const CustomerReviews = () => {
       name: 'David Thompson',
       location: 'Chicago, USA',
       rating: 5,
-      review: 'Incredible attention to detail and craftsmanship. The jeans fit like they were made just for me. Customer service is top-notch too.',
-      product: 'Urban Relaxed Fit',
+      review: 'Incredible attention to detail. The formal pants are well-tailored and comfortable. Customer service is top-notch too.',
+      product: 'Formal Pants',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
       social: 'instagram',
       verified: true
@@ -104,7 +104,7 @@ const CustomerReviews = () => {
             transition={{ delay: 0.1 }}
             className="text-xl text-gray-600 max-w-2xl mx-auto"
           >
-            Don't just take our word for it. Here's what real customers say about their MONEGZA experience.
+            Don't just take our word for it. Here's what real customers say about their OZZO experience.
           </motion.p>
         </motion.div>
 

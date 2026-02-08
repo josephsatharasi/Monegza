@@ -134,7 +134,7 @@ const Newsletter = () => {
                 >
                   <CheckCircle className="w-8 h-8 text-white" />
                   <div className="text-left">
-                    <h3 className="text-xl font-semibold text-white">Welcome to MONEGZA!</h3>
+                    <h3 className="text-xl font-semibold text-white">Welcome to OZZO!</h3>
                     <p className="text-green-100">Check your email for a special welcome offer.</p>
                   </div>
                 </motion.div>

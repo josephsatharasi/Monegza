@@ -15,6 +15,10 @@ import MobileBottomNav from './components/MobileBottomNav';
 import FloatingActionButton from './components/FloatingActionButton';
 import ProfilePage from './components/ProfilePage';
 import ProductDetailPage from './components/ProductDetailPage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import MensPage from './pages/MensPage';
+import WomensPage from './pages/WomensPage';
 
 function App() {
   const [showProfile, setShowProfile] = useState(false);
@@ -60,6 +64,10 @@ function App() {
               <Newsletter />
             </>
           } />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/mens" element={<MensPage />} />
+          <Route path="/womens" element={<WomensPage />} />
         </Routes>
         <Footer />
         <MobileBottomNav onProfileClick={handleProfileClick} />

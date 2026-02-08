@@ -11,13 +11,6 @@
   
   body {
     @apply font-sans antialiased;
-    padding-bottom: 70px;
-  }
-  
-  @media (min-width: 1024px) {
-    body {
-      padding-bottom: 0;
-    }
   }
 }
 

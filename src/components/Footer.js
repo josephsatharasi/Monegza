@@ -10,21 +10,21 @@ import {
   MapPin, 
   ArrowRight,
   Heart,
-  Leaf
+  Award
 } from 'lucide-react';
 
 const Footer = () => {
   const footerLinks = {
     'Shop': [
-      { name: 'Men\'s Jeans', href: '#' },
-      { name: 'Women\'s Jeans', href: '#' },
-      { name: 'New Arrivals', href: '#' },
-      { name: 'Best Sellers', href: '#' },
-      { name: 'Sale', href: '#' }
+      { name: 'Men\'s Formal Wear', href: '#' },
+      { name: 'Women\'s Sarees', href: '#' },
+      { name: 'Fabrics', href: '#' },
+      { name: 'Ready-Made', href: '#' },
+      { name: 'New Arrivals', href: '#' }
     ],
     'Company': [
       { name: 'About Us', href: '#' },
-      { name: 'Sustainability', href: '#' },
+      { name: 'Quality Assurance', href: '#' },
       { name: 'Careers', href: '#' },
       { name: 'Press', href: '#' },
       { name: 'Blog', href: '#' }
@@ -75,19 +75,19 @@ const Footer = () => {
                 <div className="w-12 h-12 bg-gradient-to-r from-monegza-gold to-yellow-400 rounded-xl flex items-center justify-center">
                   <span className="text-white font-bold text-xl">M</span>
                 </div>
-                <span className="text-2xl font-display font-bold">MONEGZA</span>
+                <span className="text-2xl font-display font-bold">OZZO</span>
               </div>
 
               {/* Description */}
               <p className="text-white/80 leading-relaxed">
-                Crafting premium, sustainable denim that combines timeless style with modern innovation. 
-                Join us in revolutionizing fashion for a better tomorrow.
+                Crafting premium fabrics and garments that combine timeless elegance with modern style. 
+                Your trusted partner for quality clothing.
               </p>
 
-              {/* Sustainability Badge */}
-              <div className="flex items-center space-x-2 bg-green-500/20 px-4 py-2 rounded-full w-fit">
-                <Leaf className="w-5 h-5 text-green-400" />
-                <span className="text-sm font-medium text-green-300">100% Sustainable</span>
+              {/* Quality Badge */}
+              <div className="flex items-center space-x-2 bg-blue-500/20 px-4 py-2 rounded-full w-fit">
+                <Award className="w-5 h-5 text-blue-400" />
+                <span className="text-sm font-medium text-blue-300">Premium Quality</span>
               </div>
 
               {/* Contact Info */}
@@ -145,10 +145,10 @@ const Footer = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-display font-bold mb-4">
-                Stay Updated with MONEGZA
+                Stay Updated with OZZO
               </h3>
               <p className="text-white/80">
-                Get the latest updates on new collections, exclusive offers, and sustainable fashion tips.
+                Get the latest updates on new collections, exclusive offers, and fashion tips.
               </p>
             </div>
             <div className="flex space-x-4">
@@ -180,9 +180,9 @@ const Footer = () => {
               viewport={{ once: true }}
               className="flex items-center space-x-2 text-white/60"
             >
-              <span>© 2024 MONEGZA. Made with</span>
+              <span>© 2024 OZZO. Made with</span>
               <Heart className="w-4 h-4 text-red-400 fill-current" />
-              <span>for sustainable fashion.</span>
+              <span>for quality fashion.</span>
             </motion.div>
 
             {/* Social Links */}

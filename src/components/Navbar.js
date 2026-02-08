@@ -1,55 +1,42 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Menu, X, ShoppingBag, Search, User, Heart } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import AuthModal from './AuthModal';
 
 const Navbar = ({ onProfileClick }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [user, setUser] = useState(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Collections', href: '#collections' },
-    { name: 'Men', href: '#men' },
-    { name: 'Women', href: '#women' },
-    { name: 'Sustainability', href: '#sustainability' },
-    { name: 'About', href: '#about' }
+    { name: 'Home', href: '/' },
+    { name: 'Men\'s Wear', href: '/mens' },
+    { name: 'Women\'s Wear', href: '/womens' },
+    { name: 'About', href: '/about' },
+    { name: 'Contact', href: '/contact' }
   ];
 
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-50 transition-all duration-500 ${
-        scrolled 
-          ? 'bg-white/95 backdrop-blur-xl shadow-2xl border-b border-white/20' 
-          : 'bg-transparent'
-      }`}
+      className="fixed w-full z-50 bg-white/95 backdrop-blur-xl shadow-lg border-b border-white/20"
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <motion.div
+          <motion.a
+            href="/"
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
             <div className="w-10 h-10 bg-gradient-to-r from-monegza-gradient-start to-monegza-gradient-end rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">M</span>
+              <span className="text-white font-bold text-xl">O</span>
             </div>
             <span className="text-2xl font-display font-bold text-monegza-primary">
-              MONEGZA
+              OZZO
             </span>
-          </motion.div>
+          </motion.a>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">

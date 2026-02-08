@@ -7,22 +7,22 @@ const PromoBanner = () => {
     {
       icon: Truck,
       title: 'Free Shipping',
-      description: 'On orders over $100'
+      description: 'On orders over ₹5000'
     },
     {
       icon: Shield,
-      title: '2-Year Warranty',
-      description: 'Quality guarantee'
-    },
-    {
-      icon: Recycle,
-      title: '100% Sustainable',
-      description: 'Eco-friendly materials'
+      title: 'Quality Assured',
+      description: 'Premium fabrics'
     },
     {
       icon: Award,
-      title: 'Premium Quality',
-      description: 'Handcrafted excellence'
+      title: 'Authentic Products',
+      description: 'Genuine materials'
+    },
+    {
+      icon: Recycle,
+      title: 'Easy Returns',
+      description: '30-day return policy'
     }
   ];
 
